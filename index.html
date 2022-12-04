@@ -5,8 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amy Cakes</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous">
+    </script>
+    <style>
+
+        .header{
+            display: flex;
+            background-color: #5d3831;
+            justify-content: space-between;
+            align-items: center; 
+            height: 25px;
+           
+
+        }
+        .detail{
+            display: flex;
+            justify-content: space-evenly;
+            width: 45%;
+            color: white;
+            font-family: system-ui;
+            margin:10px ;
+           
+        }
+        
+        .icon{
+            color:#ffc77d ;
+            width: 5%;
+            display: flex;
+            justify-content: space-evenly;
+            margin:10px ;
+           
+        }
+        .line{
+            /* font-size: 22px; */
+            font-weight: 1px;
+        }
+    </style>
+    <style>
+        .image-logo{
+            height: 130px;
+            width: 250px;
+            object-fit: cover;
+        }
+        .Navbar{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            background-color: #f5dab8;
+        }
+        .items{
+             display: flex;
+             justify-content: space-around;
+             width: 100%;
+             font-family:system-ui ;
+             font-weight: bold;
+             color:#5d3831 ;
+        }
+        .items p{
+            padding: 10px;
+        }
+        .items p:hover {
+            background-color:#5d3831 ;
+            color: aliceblue;
+        }
+        .cart{
+            margin: 10px;
+            color:#5d3831;
+            padding: 10px;
+
+        }
+        .cart:hover{
+            cursor: pointer;
+            color: aliceblue;
+            background-color:#5d3831 ;
+            
+        }
+        .dropdownitem{
+            display: none;
+            position: absolute;
+            background-color: #5d3831;
+            color: aliceblue; 
+            font-size: smaller;
+            margin-top: -16px;
+            
+            
+        }
+        .dropdown{
+            display: inline;
+            cursor: pointer;
+        }
+        
+        .dropdown:hover .dropdownitem{
+            cursor: pointer;
+            display: block;
+
+        }
+        .plus{
+            color: #5d3831;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="header">
+        <div class="icon"> 
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div class="detail">
+            <p><span class="line">|</span> Contact</p>
+            <p><span class="line">|</span> <i class="fa-solid fa-envelope"></i> neelumishra0397@gmail.com</p>
+            <p><span class="line">|</span> <i class="fa-solid fa-phone"></i> 8770128825</p>
+            <p><span class="line">|</span> <i class="fa-solid fa-location-dot"></i> Address</p>
+            <p><span class="line">|</span> <i class="fa-solid fa-user"></i> Login</p>
+            <p><span class="line">|</span> <i class="fa-solid fa-magnifying-glass"></i></p>
+        </div>
+    </div>
+    <div class="Navbar">
+        <div class="logo"><img class="image-logo" src="logo.JPG" alt="Logo"></div>
+        <div class="items">
+            <p>Home</p>
+            <p>About</p>
+            <div class="dropdown"><p >Customised Cakes <span class="plus">+</span></p>
+                <div class="dropdownitem">
+                    <h3 >Alphabet Cake</h3>
+                    <h3 >Cartoon Cake</h3>
+                    <h3 >Boys Cakes</h3>
+                    <h3 >Girls Cakes</h3>
+                    <h3 >Kids Cakes</h3>
+                    <h3 >Theme Cakes</h3>
+                    <h3 >Wedding Cakes</h3>
+                    <h3 >Festival Cakes</h3>
+                    <h3>Photo Cakes</h3>
+                </div>
+            </div>
+           <div class="dropdown"> <p>New Collection <span class="plus">+</span></p>
+            <div class="dropdownitem">
+                <h3>Diamond Collection</h3>
+                <h3>Golden Collection</h3>
+                <h3>Silver Collection</h3>
+            </div>
+            
+            
+        </div>
+            <p>Menu Check</p>
+        </div>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+    </div>
 </body>
 </html>
